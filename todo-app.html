@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link id="Link"
+        href="https://static.vecteezy.com/system/resources/thumbnails/016/516/991/small/to-do-list-icon-free-vector.jpg"
+        rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>To-do App</h2>
+    <div class="todo-task">
+        <div class="task-header">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="svg-nav">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+            <span class="greeting">Hi!</span>
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="svg-user">
+                <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+            </svg>
+        </div>
+        <div class="all-task">
+            <h3>Every Day Your Task Plan</h3>
+            <div class="todo-main-graphic"><img src="assets/todo-icon.png" alt="todo list" class="todo-graphic"></div>
+            <div class="alertmsgbox"><span class="alerttxt"></span></div>
+            <p class="active-task">On Going Task <span>0</span></p>
+            <div class="listbox"></div>
+        </div>
+        <a href="javascript:void(0)" class="add-task-btn">+</a>
+        <div class="bottom-nav">
+
+        </div>
+        <div class="add-task-modal hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" class="close-task-modal">
+                <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+            </svg>
+            <div class="modal-box">
+                <h3 class="task-modal-title">Add new task</h3>
+                <input type="text" placeholder="Task" id="taskname">
+                <span class="alert">Enter task name</span>
+                <input type="hidden" id="saveIndex" />
+                <button class="create-task-btn">Create task</button>
+                <button class="save-task-btn">Save task</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/todo.js"></script>
+</body>
+
+</html>
